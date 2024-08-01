@@ -19,8 +19,6 @@ function Auth({ typelogin }: { typelogin: "Signup" | "Signin" }) {
     if (token) {
       // Redirect to sign-in page if not authenticated
       nav("/blogs");
-    } else {
-      nav("/signin");
     }
   }, [nav]);
 
